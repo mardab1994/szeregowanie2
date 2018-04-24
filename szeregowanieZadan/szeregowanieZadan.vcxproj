@@ -149,7 +149,8 @@
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="zadanie.h" />
-    <ClInclude Include="zbiorZadan.h" />
+    <ClInclude Include="zadanieRPQ.h" />
+    <ClInclude Include="jackson.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -160,7 +161,8 @@
     </ClCompile>
     <ClCompile Include="szeregowanieZadan.cpp" />
     <ClCompile Include="zadanie.cpp" />
-    <ClCompile Include="zbiorZadan.cpp" />
+    <ClCompile Include="zadanieRPQ.cpp" />
+    <ClCompile Include="jackson.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

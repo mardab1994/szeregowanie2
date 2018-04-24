@@ -2,14 +2,14 @@
 //
 
 #include "stdafx.h"
-#include "zbiorZadan.h"
+#include "jackson.h"
 #include <string>
 
 using namespace std;
 
 int main()
 {
-	zbiorZadan zbior;
+	jackson zbior;
 	zbior.wczytajZadania("zadania.txt");
 	zbior.wyswietl();
 	zbior.wykonaj();

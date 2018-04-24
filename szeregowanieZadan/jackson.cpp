@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "zbiorZadan.h"
+#include "jackson.h"
 #include"zadanie.h"
 
 #include <vector>
@@ -9,15 +9,15 @@
 
 using namespace std;
 
-zbiorZadan::zbiorZadan()
+jackson::jackson()
 {
 }
 
-zbiorZadan::~zbiorZadan()
+jackson::~jackson()
 {
 }
 
-void zbiorZadan::wczytajZadania(string path)
+void jackson::wczytajZadania(string path)
 {
 	plik.open(path);
 	if (!plik.good())
@@ -41,7 +41,7 @@ void zbiorZadan::wczytajZadania(string path)
 	}
 }
 
-void zbiorZadan::wyswietl()
+void jackson::wyswietl()
 {
 	cout << "n=" << n << endl;
 	for (int i = 0; i < listaZadan.size() ; i++)
@@ -50,7 +50,7 @@ void zbiorZadan::wyswietl()
 	}
 }
 
-void zbiorZadan::sortuj()
+void jackson::sortuj()
 {
 	int i, j;
 	bool swapped;
@@ -71,7 +71,7 @@ void zbiorZadan::sortuj()
 	}
 }
 
-void zbiorZadan::wykonaj()
+void jackson::wykonaj()
 {
 	int Cmax = 0;
 	int C = 0;

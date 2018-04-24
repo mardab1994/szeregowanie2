@@ -7,7 +7,7 @@
 
 using namespace std;
 
-class zbiorZadan
+class jackson
 {
 private:
 	int n;
@@ -17,8 +17,8 @@ private:
 	void sortuj();
 
 public:
-	zbiorZadan();
-	~zbiorZadan();
+	jackson();
+	~jackson();
 	void wczytajZadania(string path);
 	void wyswietl();
 	void wykonaj();
