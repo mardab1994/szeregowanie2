@@ -2,10 +2,18 @@
 //
 
 #include "stdafx.h"
+#include "zbiorZadan.h"
+#include <string>
 
+using namespace std;
 
 int main()
 {
+	zbiorZadan zbior;
+	zbior.wczytajZadania("zadania.txt");
+	zbior.wyswietl();
+	zbior.wykonaj();
+
     return 0;
 }
 
