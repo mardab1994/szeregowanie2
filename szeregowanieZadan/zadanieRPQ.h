@@ -7,10 +7,17 @@ private:
 	int q;//termin dostarczenia-oddania zadania
 public:
 	zadanieRPQ(int R, int P, int Q);
+	zadanieRPQ();
 	~zadanieRPQ();
 
-	int getR();
-	int getP();
-	int getQ();
+	int getR();//termin dostepnosci
+	int getP();//czas obslugi
+	int getQ();//termin dostarczenia/oddania zadania
+	
+	void decR();//dekrementuje R
+	void decP();//dekrementuje P
+	void decQ();//dekrementuje Q
+
+	void wyswietl();
 };
 

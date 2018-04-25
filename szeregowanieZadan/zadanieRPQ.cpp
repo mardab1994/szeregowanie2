@@ -1,6 +1,11 @@
 #include "stdafx.h"
 #include "zadanieRPQ.h"
 
+#include<iostream>
+#include<string>
+using namespace std;
+
+
 
 zadanieRPQ::zadanieRPQ(int R, int P, int Q)
 {
@@ -9,6 +14,10 @@ zadanieRPQ::zadanieRPQ(int R, int P, int Q)
 	this->q = Q;
 }
 
+zadanieRPQ::zadanieRPQ()
+{
+
+}
 
 zadanieRPQ::~zadanieRPQ()
 {
@@ -27,4 +36,24 @@ int zadanieRPQ::getP()
 int zadanieRPQ::getQ()
 {
 	return this->q;
+}
+
+void zadanieRPQ::decR()//dekrementuje R
+{
+	this->r--;
+}
+
+void zadanieRPQ::decP()//dekrementuje P
+{
+	this->p--;
+}
+
+void zadanieRPQ::decQ()//dekrementuje Q
+{
+	this - q--;
+}
+
+void zadanieRPQ::wyswietl()
+{
+	cout << "r=" << r << "  p=" << p << "  q=" << q << endl;
 }
